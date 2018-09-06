@@ -109,8 +109,14 @@ function disconnect() {
 function onDisconnect(){
 	document.getElementById("statusDiv").innerHTML = "Status: Disconnected";
 }
+function onError(reason){
+	document.getElementById("Error").innerHTML = "Error: " + reason;
+}
+
+/*
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
+*/
 
 	
