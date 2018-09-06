@@ -30,8 +30,9 @@ img{
 */
 #bleDeviceList{
 	border: 1px solid black;
-	background-color: red;
+	background-color: #87CEEB;
 	margin: 0px 60% 0px 0px;
+	overflow: hidden;
 }
 
 /* width will be 100% of content */
