@@ -14,17 +14,21 @@
      <body onload="onLoad()">
 
 		<h1>Bluifruit test</h1>
-           
-		<ul id="bleDeviceList"> </ul>  
-		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
-		<br>
+        <br><br>
+		<button id="UnlockButton" onclick = "data('0');sendData();">Unlock</button>
+		<button id="LockButton" onclick = "data('1');sendData();">Lock</button> 
+		<br><br>
 		<div id="statusDiv">Status: Disconnected</div>
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
-		<br><br>
-		<button id="ledOnButton" onclick = "data('1')">Set led ON</button>
-		<br><br>
-		<button id="ledOffButton" onclick = "data('0')">Set Led Off</button>
+		<br>
+		<h3>Device list</h3>
+		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+		<br>
+		<ul id="bleDeviceList"> </ul>  
+
+
+
 		<br><br><br>
 		<input type="text" id="messageInput" value="Hello"/>
 		<br>

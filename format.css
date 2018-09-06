@@ -1,5 +1,5 @@
 body{
-	background-color: green;
+	background-color: white;
 }	
 img{
 	width: 100%;	
@@ -32,9 +32,9 @@ img{
 #sendButton{
 	width: 100%;
 }
-#ledOnButton{
+#LockButton{
 	width: 100%;
 }
-#ledOffButton{
+#UnlockButton{
 	width: 100%;
 }

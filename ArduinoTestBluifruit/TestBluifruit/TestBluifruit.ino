@@ -1,3 +1,5 @@
+#include <Servo.h>
+
 /*********************************************************************
   This is an example based on nRF51822 based Bluefruit LE modules
 
@@ -43,8 +45,10 @@ void error(const __FlashStringHelper*err) {
             automatically on startup)
 */
 /**************************************************************************/
+Servo servo;
 void setup(void)
 {
+  servo.attach(9);
   while (!Serial);  // required for Flora & Micro
   delay(500);
 
@@ -97,7 +101,7 @@ void setup(void)
   }
 
   //Give module a new name
-  ble.println("AT+GAPDEVNAME=LONE"); // named LONE
+  ble.println("AT+GAPDEVNAME=SIXTENV2"); // named SIXTENV2
 
   // Check response status
   ble.waitForOK();
@@ -138,6 +142,12 @@ void loop(void)
   {
     int c = ble.read();
     Serial.print((char)c);
+    if((char)c=='1'){
+      servo.write(50);
+    }
+    else{
+      servo.write(150);
+    }
   }
   delay(1000);
 }
