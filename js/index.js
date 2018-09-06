@@ -81,7 +81,8 @@ function onConnect(){
 
 //failure
 function onConnError(){
-	alert("Problem connecting");
+	document.getElementById("Error2").innerHTML = "Error2: Problem connecting";
+	//alert("Problem connecting");
 	document.getElementById("statusDiv").innerHTML = " Status: Disonnected";
 }
 
