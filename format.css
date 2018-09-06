@@ -1,5 +1,5 @@
 body{
-	background-color: white;
+	background-color: #87CEFA;
 }	
 img{
 	width: 100%;	
@@ -37,4 +37,7 @@ img{
 }
 #UnlockButton{
 	width: 100%;
+}
+#header1{
+	text-align: center;
 }

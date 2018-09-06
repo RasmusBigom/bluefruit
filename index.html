@@ -13,7 +13,7 @@
     </head>
      <body onload="onLoad()">
 
-		<h1>Bluifruit test</h1>
+		<h1 id="header1">Smart'E'Lock A/S</h1>
         <br><br>
 		<button id="UnlockButton" onclick = "data('0');sendData();">Unlock</button>
 		<button id="LockButton" onclick = "data('1');sendData();">Lock</button> 
@@ -22,13 +22,13 @@
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<h3>Device list</h3>
+		<h3 id="header1">Device list</h3>
 		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 		<br>
 		<ul id="bleDeviceList"> </ul>  
 
 
-
+<!--
 		<br><br><br>
 		<input type="text" id="messageInput" value="Hello"/>
 		<br>
@@ -39,7 +39,8 @@
 		<div id="sendDiv"></div>
 		<br><br>
 		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
-		<div id="receiveDiv"></div>
+		<div id="receiveDiv"></div> 
+-->
     </body>
 </html>
 			
