@@ -55,13 +55,13 @@ function refreshDeviceList(){
 
 
 function onDiscoverDevice(device){
-	var listItem = document.createElement('li');
 	//Make a list in html and show devises
-	if(device.name != ""){
-		var html = device.name+ "," + device.id;
+	if(device.name == "SIXTENV2"){
+		var listItem = document.createElement('li'),
+		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
+		document.getElementById("bleDeviceList").appendChild(listItem);
 	}
-	document.getElementById("bleDeviceList").appendChild(listItem);
 }
 
 
