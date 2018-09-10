@@ -56,7 +56,7 @@ function refreshDeviceList(){
 
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
-	if(device.name != "undefined"){
+	if(device.name != ""){
 		var listItem = document.createElement('li');
 		var html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
