@@ -59,7 +59,7 @@ function onDiscoverDevice(device){
 	var listItem = document.createElement('li'),
     html = device.name+ "," + device.id;
     listItem.innerHTML = html;
-	if(defice.name != undefined){
+	if(defice.name != "undefined"){
     document.getElementById("bleDeviceList").appendChild(listItem);
 	}
 }
