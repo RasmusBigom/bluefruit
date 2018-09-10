@@ -113,6 +113,14 @@ function onDisconnect(){
 function onError(reason){
 	document.getElementById("Error").innerHTML = "Error: " + reason;
 }
+function checkPswd(){
+	var confirmPassword = "Admin";
+	var password = document.getElementById("pswd").value;
+	if (password == confirmPassword) {
+	window.location = "index.html";
+	}	
+}
+
 
 /*
 function onError(reason)  {
